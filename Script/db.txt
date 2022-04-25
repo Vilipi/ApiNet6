@@ -1,0 +1,294 @@
+INSERT INTO Products
+SELECT
+    'PRODUCT 0',
+    'CATEGORY 1',
+    'PRODUCT 0 SHORT',
+    'LONG DESCRIPTION FOR PRODUCT 0;LONG DESCRIPTION FOR PRODUCT 0;LONG DESCRIPTION FOR PRODUCT 0;',
+    10,
+    'http://placeimg.com/320/240/abstract?32850',
+    'http://placeimg.com/320/240/abstract?23902,http://placeimg.com/320/240/abstract?90713';
+
+INSERT INTO Products
+SELECT
+    'PRODUCT 1',
+    'CATEGORY 1',
+    'PRODUCT 1 SHORT',
+    'LONG DESCRIPTION FOR PRODUCT 1;LONG DESCRIPTION FOR PRODUCT 1;LONG DESCRIPTION FOR PRODUCT 1;',
+    11,
+    'http://placeimg.com/320/240/abstract?32850',
+    'http://placeimg.com/320/240/abstract?23902,http://placeimg.com/320/240/abstract?90713,http://placeimg.com/320/240/abstract?23902';
+
+INSERT INTO Products
+SELECT
+    'PRODUCT 2',
+    'CATEGORY 2',
+    'PRODUCT 2 SHORT',
+    'LONG DESCRIPTION FOR PRODUCT 2;LONG DESCRIPTION FOR PRODUCT 2;LONG DESCRIPTION FOR PRODUCT 2;',
+    12,
+    'http://placeimg.com/320/240/abstract?32850',
+    'http://placeimg.com/320/240/abstract?23902,http://placeimg.com/320/240/abstract?90713,http://placeimg.com/320/240/abstract?23902';
+
+INSERT INTO Products
+SELECT
+    'PRODUCT 3',
+    'CATEGORY 3',
+    'PRODUCT 2 SHORT',
+    'LONG DESCRIPTION FOR PRODUCT 3;LONG DESCRIPTION FOR PRODUCT 3;LONG DESCRIPTION FOR PRODUCT 3;',
+    13,
+    'http://placeimg.com/320/240/abstract?32850',
+    'http://placeimg.com/320/240/abstract?23902,http://placeimg.com/320/240/abstract?90713,http://placeimg.com/320/240/abstract?23902';
+
+---------------
+---------------
+---------------
+
+INSERT INTO Products
+SELECT
+    'PRODUCT 4',
+    'CATEGORY 1',
+    'PRODUCT 4 SHORT',
+    'LONG DESCRIPTION FOR PRODUCT 4;LONG DESCRIPTION FOR PRODUCT 4;LONG DESCRIPTION FOR PRODUCT 4;',
+    20,
+    'http://placeimg.com/320/240/abstract?32850',
+    'http://placeimg.com/320/240/abstract?23902,http://placeimg.com/320/240/abstract?90713,http://placeimg.com/320/240/abstract?23902';
+-------------
+INSERT INTO Products
+SELECT
+    'PRODUCT 5',
+    'CATEGORY 3',
+    'PRODUCT 5 SHORT',
+    'LONG DESCRIPTION FOR PRODUCT 5;LONG DESCRIPTION FOR PRODUCT 5;LONG DESCRIPTION FOR PRODUCT 5;',
+    100,
+    'http://placeimg.com/320/240/abstract?32850',
+    'http://placeimg.com/320/240/abstract?23902,http://placeimg.com/320/240/abstract?90713,http://placeimg.com/320/240/abstract?23902';
+    ------
+INSERT INTO Products
+SELECT
+    'PRODUCT 6',
+    'CATEGORY 1',
+    'PRODUCT 6 SHORT',
+    'LONG DESCRIPTION FOR PRODUCT 6;LONG DESCRIPTION FOR PRODUCT 6;LONG DESCRIPTION FOR PRODUCT 6;',
+    130,
+    'http://placeimg.com/320/240/abstract?32850',
+    'http://placeimg.com/320/240/abstract?23902,http://placeimg.com/320/240/abstract?90713,http://placeimg.com/320/240/abstract?23902';
+    ------
+INSERT INTO Products
+SELECT
+    'PRODUCT 7',
+    'CATEGORY 3',
+    'PRODUCT 7 SHORT',
+    'LONG DESCRIPTION FOR PRODUCT 7;LONG DESCRIPTION FOR PRODUCT 7;LONG DESCRIPTION FOR PRODUCT 7;',
+    55,
+    'http://placeimg.com/320/240/abstract?32850',
+    'http://placeimg.com/320/240/abstract?23902,http://placeimg.com/320/240/abstract?90713,http://placeimg.com/320/240/abstract?23902';
+    --------
+INSERT INTO Products
+SELECT
+    'PRODUCT 9',
+    'CATEGORY 1',
+    'PRODUCT 2 SHORT',
+    'LONG DESCRIPTION FOR PRODUCT 9;LONG DESCRIPTION FOR PRODUCT 9;LONG DESCRIPTION FOR PRODUCT 9;',
+    230,
+    'http://placeimg.com/320/240/abstract?32850',
+    'http://placeimg.com/320/240/abstract?23902,http://placeimg.com/320/240/abstract?90713,http://placeimg.com/320/240/abstract?23902';
+    --------
+INSERT INTO Products
+SELECT
+    'PRODUCT 10',
+    'CATEGORY 3',
+    'PRODUCT 10 SHORT',
+    'LONG DESCRIPTION FOR PRODUCT 10;LONG DESCRIPTION FOR PRODUCT 10;LONG DESCRIPTION FOR PRODUCT 10;',
+    89,
+    'http://placeimg.com/320/240/abstract?32850',
+    'http://placeimg.com/320/240/abstract?23902,http://placeimg.com/320/240/abstract?90713,http://placeimg.com/320/240/abstract?23902';
+    -------
+INSERT INTO Products
+SELECT
+    'PRODUCT 11',
+    'CATEGORY 2',
+    'PRODUCT 11 SHORT',
+    'LONG DESCRIPTION FOR PRODUCT 11;LONG DESCRIPTION FOR PRODUCT 11;LONG DESCRIPTION FOR PRODUCT 11;',
+    13,
+    'http://placeimg.com/320/240/abstract?32850',
+    'http://placeimg.com/320/240/abstract?23902,http://placeimg.com/320/240/abstract?90713,http://placeimg.com/320/240/abstract?23902';
+    -------
+INSERT INTO Products
+SELECT
+    'PRODUCT 12',
+    'CATEGORY 2',
+    'PRODUCT 12 SHORT',
+    'LONG DESCRIPTION FOR PRODUCT 12;LONG DESCRIPTION FOR PRODUCT 12;LONG DESCRIPTION FOR PRODUCT 12;',
+    64,
+    'http://placeimg.com/320/240/abstract?32850',
+    'http://placeimg.com/320/240/abstract?23902,http://placeimg.com/320/240/abstract?90713,http://placeimg.com/320/240/abstract?23902';
+    --------
+INSERT INTO Products
+SELECT
+    'PRODUCT 13',
+    'CATEGORY 3',
+    'PRODUCT 13 SHORT',
+    'LONG DESCRIPTION FOR PRODUCT 13;LONG DESCRIPTION FOR PRODUCT 13;LONG DESCRIPTION FOR PRODUCT 13;',
+    45,
+    'http://placeimg.com/320/240/abstract?32850',
+    'http://placeimg.com/320/240/abstract?23902,http://placeimg.com/320/240/abstract?90713,http://placeimg.com/320/240/abstract?23902';
+    -------
+INSERT INTO Products
+SELECT
+    'PRODUCT 14',
+    'CATEGORY 1',
+    'PRODUCT 14 SHORT',
+    'LONG DESCRIPTION FOR PRODUCT 14;LONG DESCRIPTION FOR PRODUCT 14;LONG DESCRIPTION FOR PRODUCT 14;',
+    21,
+    'http://placeimg.com/320/240/abstract?32850',
+    'http://placeimg.com/320/240/abstract?23902,http://placeimg.com/320/240/abstract?90713,http://placeimg.com/320/240/abstract?23902';
+    --------
+INSERT INTO Products
+SELECT
+    'PRODUCT 15',
+    'CATEGORY 2',
+    'PRODUCT 15 SHORT',
+    'LONG DESCRIPTION FOR PRODUCT 15;LONG DESCRIPTION FOR PRODUCT 15;LONG DESCRIPTION FOR PRODUCT 15;',
+    70,
+    'http://placeimg.com/320/240/abstract?32850',
+    'http://placeimg.com/320/240/abstract?23902,http://placeimg.com/320/240/abstract?90713,http://placeimg.com/320/240/abstract?23902';
+    --------
+INSERT INTO Products
+SELECT
+    'PRODUCT 16',
+    'CATEGORY 3',
+    'PRODUCT 16 SHORT',
+    'LONG DESCRIPTION FOR PRODUCT 16;LONG DESCRIPTION FOR PRODUCT 16;LONG DESCRIPTION FOR PRODUCT 16;',
+    32,
+    'http://placeimg.com/320/240/abstract?32850',
+    'http://placeimg.com/320/240/abstract?23902,http://placeimg.com/320/240/abstract?90713,http://placeimg.com/320/240/abstract?23902';
+    ----------
+INSERT INTO Products
+SELECT
+    'PRODUCT 17',
+    'CATEGORY 1',
+    'PRODUCT 17 SHORT',
+    'LONG DESCRIPTION FOR PRODUCT 17;LONG DESCRIPTION FOR PRODUCT 17;LONG DESCRIPTION FOR PRODUCT 17;',
+    10,
+    'http://placeimg.com/320/240/abstract?32850',
+    'http://placeimg.com/320/240/abstract?23902,http://placeimg.com/320/240/abstract?90713,http://placeimg.com/320/240/abstract?23902';
+    ----------
+INSERT INTO Products
+SELECT
+    'PRODUCT 18',
+    'CATEGORY 2',
+    'PRODUCT 18 SHORT',
+    'LONG DESCRIPTION FOR PRODUCT 18;LONG DESCRIPTION FOR PRODUCT 18;LONG DESCRIPTION FOR PRODUCT 18;',
+    82,
+    'http://placeimg.com/320/240/abstract?32850',
+    'http://placeimg.com/320/240/abstract?23902,http://placeimg.com/320/240/abstract?90713,http://placeimg.com/320/240/abstract?23902';
+    ----------
+INSERT INTO Products
+SELECT
+    'PRODUCT 19',
+    'CATEGORY 3',
+    'PRODUCT 19 SHORT',
+    'LONG DESCRIPTION FOR PRODUCT 19;LONG DESCRIPTION FOR PRODUCT 19;LONG DESCRIPTION FOR PRODUCT 19;',
+    33,
+    'http://placeimg.com/320/240/abstract?32850',
+    'http://placeimg.com/320/240/abstract?23902,http://placeimg.com/320/240/abstract?90713,http://placeimg.com/320/240/abstract?23902';
+    -----------
+INSERT INTO Products
+SELECT
+    'PRODUCT 20',
+    'CATEGORY 1',
+    'PRODUCT 20 SHORT',
+    'LONG DESCRIPTION FOR PRODUCT 20;LONG DESCRIPTION FOR PRODUCT 20;LONG DESCRIPTION FOR PRODUCT 20;',
+    13,
+    'http://placeimg.com/320/240/abstract?32850',
+    'http://placeimg.com/320/240/abstract?23902,http://placeimg.com/320/240/abstract?90713,http://placeimg.com/320/240/abstract?23902';
+    -----------
+INSERT INTO Products
+SELECT
+    'PRODUCT 21',
+    'CATEGORY 2',
+    'PRODUCT 21 SHORT',
+    'LONG DESCRIPTION FOR PRODUCT 21;LONG DESCRIPTION FOR PRODUCT 21;LONG DESCRIPTION FOR PRODUCT 21;',
+    5,
+    'http://placeimg.com/320/240/abstract?32850',
+    'http://placeimg.com/320/240/abstract?23902,http://placeimg.com/320/240/abstract?90713,http://placeimg.com/320/240/abstract?23902';
+    ----------
+INSERT INTO Products
+SELECT
+    'PRODUCT 22',
+    'CATEGORY 3',
+    'PRODUCT 22 SHORT',
+    'LONG DESCRIPTION FOR PRODUCT 22;LONG DESCRIPTION FOR PRODUCT 22;LONG DESCRIPTION FOR PRODUCT 22;',
+    135,
+    'http://placeimg.com/320/240/abstract?32850',
+    'http://placeimg.com/320/240/abstract?23902,http://placeimg.com/320/240/abstract?90713,http://placeimg.com/320/240/abstract?23902';
+    ----------
+INSERT INTO Products
+SELECT
+    'PRODUCT 23',
+    'CATEGORY 1',
+    'PRODUCT 23 SHORT',
+    'LONG DESCRIPTION FOR PRODUCT 23;LONG DESCRIPTION FOR PRODUCT 23;LONG DESCRIPTION FOR PRODUCT 23;',
+    153,
+    'http://placeimg.com/320/240/abstract?32850',
+    'http://placeimg.com/320/240/abstract?23902,http://placeimg.com/320/240/abstract?90713,http://placeimg.com/320/240/abstract?23902';
+    ---------
+INSERT INTO Products
+SELECT
+    'PRODUCT 24',
+    'CATEGORY 2',
+    'PRODUCT 24 SHORT',
+    'LONG DESCRIPTION FOR PRODUCT 24;LONG DESCRIPTION FOR PRODUCT 24;LONG DESCRIPTION FOR PRODUCT 24;',
+    69,
+    'http://placeimg.com/320/240/abstract?32850',
+    'http://placeimg.com/320/240/abstract?23902,http://placeimg.com/320/240/abstract?90713,http://placeimg.com/320/240/abstract?23902';
+    -----------
+    INSERT INTO Products
+SELECT
+    'PRODUCT 25',
+    'CATEGORY 3',
+    'PRODUCT 25 SHORT',
+    'LONG DESCRIPTION FOR PRODUCT 25;LONG DESCRIPTION FOR PRODUCT 25;LONG DESCRIPTION FOR PRODUCT 25;',
+    22,
+    'http://placeimg.com/320/240/abstract?32850',
+    'http://placeimg.com/320/240/abstract?23902,http://placeimg.com/320/240/abstract?90713,http://placeimg.com/320/240/abstract?23902';
+    -----------
+    INSERT INTO Products
+SELECT
+    'PRODUCT 26',
+    'CATEGORY 1',
+    'PRODUCT 26 SHORT',
+    'LONG DESCRIPTION FOR PRODUCT 26;LONG DESCRIPTION FOR PRODUCT 26;LONG DESCRIPTION FOR PRODUCT 26;',
+    19,
+    'http://placeimg.com/320/240/abstract?32850',
+    'http://placeimg.com/320/240/abstract?23902,http://placeimg.com/320/240/abstract?90713,http://placeimg.com/320/240/abstract?23902';
+    ------------
+INSERT INTO Products
+SELECT
+    'PRODUCT 27',
+    'CATEGORY 2',
+    'PRODUCT 27 SHORT',
+    'LONG DESCRIPTION FOR PRODUCT 27;LONG DESCRIPTION FOR PRODUCT 27;LONG DESCRIPTION FOR PRODUCT 27;',
+    26,
+    'http://placeimg.com/320/240/abstract?32850',
+    'http://placeimg.com/320/240/abstract?23902,http://placeimg.com/320/240/abstract?90713,http://placeimg.com/320/240/abstract?23902';
+    ------------
+INSERT INTO Products
+SELECT
+    'PRODUCT 28',
+    'CATEGORY 3',
+    'PRODUCT 28 SHORT',
+    'LONG DESCRIPTION FOR PRODUCT 28;LONG DESCRIPTION FOR PRODUCT 28;LONG DESCRIPTION FOR PRODUCT 28;',
+    35,
+    'http://placeimg.com/320/240/abstract?32850',
+    'http://placeimg.com/320/240/abstract?23902,http://placeimg.com/320/240/abstract?90713,http://placeimg.com/320/240/abstract?23902';
+    --------
+INSERT INTO Products
+SELECT
+    'PRODUCT 29',
+    'CATEGORY 2',
+    'PRODUCT 29 SHORT',
+    'LONG DESCRIPTION FOR PRODUCT 29;LONG DESCRIPTION FOR PRODUCT 29;LONG DESCRIPTION FOR PRODUCT 29;',
+    48,
+    'http://placeimg.com/320/240/abstract?32850',
+    'http://placeimg.com/320/240/abstract?23902,http://placeimg.com/320/240/abstract?90713,http://placeimg.com/320/240/abstract?23902';
+    --------
