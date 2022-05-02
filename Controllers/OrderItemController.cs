@@ -39,7 +39,7 @@ public class OrderItemController : ControllerBase
     }
 
     [HttpGet]
-    [Route("{OrderId}")]
+    [Route("{OrderId}")] // Obtenemos un una un array segun su numero de orden
     public ActionResult<OrderItem> Get(int OrderId)
     {
         // List <OrderItem> order = _orders.FindAll(x => x.OrderId == OrderId);
@@ -56,23 +56,25 @@ public class OrderItemController : ControllerBase
          
 
     }   
-
-     [HttpPost] // Create
+/// <remarks>
+/// Sample request:
+///
+///     POST 
+///     [
+///     {
+///        "productId": 1,
+///        "quantity": 2
+///     },
+///     {
+///        "productId": 2,
+///        "quantity": 2
+///     },
+///     ]
+///
+/// </remarks>
+    [HttpPost] // Create
     public ActionResult Post(List<OrderItem> orderItem) {
-        // var existingOrder = _context.Orders?.Find(orderItem.ProductId);
-
-        // var existingOrder = _orders?.Find(x => x.ProductId == orderItem.ProductId);
-        // if (existingOrder != null) {
-        //     return Conflict("There is an existing orderItem with this Id"); // status 409
-        // } else {
-        //     // _context.Orders?.Add(orderItem);
-        //     _orders?.Add(orderItem);
-        //     var resourceUrl = Request.Path.ToString() + "/" + orderItem.Id;
-        //     return Created(resourceUrl, orderItem); // Status 201
-        // }
-
-        // TODO MIRAR SI EL CARRITO ESTA VACIO 
-
+      
         int? lastOrder = _context.Orders == null? 1 : _context.Orders.Max(x => x.OrderId) + 1; // devuelve el siguiente id de la tabla
     
         foreach (OrderItem item in orderItem){

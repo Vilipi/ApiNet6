@@ -1,5 +1,7 @@
 global using ApiNet6.Data;
 global using Microsoft.EntityFrameworkCore;
+using System.Reflection;
+using Microsoft.OpenApi.Models; // para la documentación de Swagger
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,7 +13,16 @@ builder.Services.AddDbContext<DataContext>(options =>
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGen(
+    // Modificando addSwaggergen para poder poner nuestros comentarios
+    
+    options =>
+    {
+        var xmlFilename = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+        options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, xmlFilename));
+        options.SwaggerDoc("v1", new OpenApiInfo { Title = "Mi API en .NET 6", Version = "v1" });
+    }
+);
 
 var app = builder.Build();
 

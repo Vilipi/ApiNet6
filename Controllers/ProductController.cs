@@ -40,7 +40,7 @@ public class ProductController : ControllerBase
     public ActionResult<Product> Get(int Id)
     {
         var product = _context.Products?.Find(Id); // AÑADIENDO INTERROGANTE PARA PERMITIR NULL
-        return product == null? NotFound() : Ok(product);
+        return product == null? NotFound("Producto no encontrado") : Ok(product);
     }
     
 } 
