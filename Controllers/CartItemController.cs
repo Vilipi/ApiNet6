@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using Swashbuckle.AspNetCore.Annotations;
 
 namespace ApiNet6.Controllers;
 
@@ -28,7 +29,12 @@ public class CartItemController : ControllerBase
     }
 
     [HttpGet]
-    public ActionResult<Product> Get() {
+    [SwaggerOperation(Summary = "Get all cartItems", Description = "Get all cartItems from our database")]
+    [SwaggerResponse(StatusCodes.Status200OK, "Ok", typeof(CartItem))]
+    [SwaggerResponse(404, "Not found")]
+    public ActionResult<CartItem> Get() {
+        var cart = _context.CartItems;
+
         return Ok(_context.CartItems); // status 200
     }
 
@@ -44,6 +50,9 @@ public class CartItemController : ControllerBase
 ///
 /// </remarks>
     [HttpPost] // Create
+    [SwaggerOperation(Summary = "Create a cartItem", Description = "Creating a cartItem to our database")]
+    [SwaggerResponse(StatusCodes.Status201Created, "Created", typeof(CartItem))]
+    [SwaggerResponse(409, "Conflict")]
     public ActionResult Post(CartItem cartItem) {
         // var existingCartItem = _cartItem.Find(x => x.ProductId == cartItem.ProductId);
         var existingCartItem = _context.CartItems?.Find(cartItem.ProductId);
@@ -60,6 +69,9 @@ public class CartItemController : ControllerBase
 
     [HttpDelete] // Delete
     [Route("{ProductId}")]
+    [SwaggerOperation(Summary = "Remove a cartItem", Description = "Removing a cartItem from our database")]
+    [SwaggerResponse(StatusCodes.Status200OK, "Ok", typeof(CartItem))]
+    [SwaggerResponse(404, "Not found")]
 
     public ActionResult Delete(int ProductId) {
         var productToRemove = _context.CartItems?.Where(x => x.ProductId == ProductId).FirstOrDefault(); // buscando el CartItem por el ProductId
@@ -84,6 +96,9 @@ public class CartItemController : ControllerBase
 /// </remarks>
     [HttpPut] // Update
     [Route("{cartItemProductId}")]
+    [SwaggerOperation(Summary = "Updating a cartItem", Description = "Updating a cartItem from our database")]
+    [SwaggerResponse(StatusCodes.Status200OK, "Ok", typeof(CartItem))]
+    [SwaggerResponse(404, "Not found")]
     public ActionResult Put(CartItem cartItem) {
         var cartItemProductID = cartItem.ProductId; // valor del route
         var existingCartItem = _context.CartItems?.Where(x => x.ProductId == cartItem.ProductId).FirstOrDefault(); // buscando el CartItem por el ProductId

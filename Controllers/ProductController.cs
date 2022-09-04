@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using Swashbuckle.AspNetCore.Annotations;
 
 namespace ApiNet6.Controllers;
 
@@ -29,14 +30,27 @@ public class ProductController : ControllerBase
         _context = context;
     }
 
+  
     [HttpGet]
+    [SwaggerOperation(Summary = "Listing all products", Description = "Get a list of all the products")]
+    [SwaggerResponse(StatusCodes.Status200OK, "Request Successful", typeof(List<Product>))]
+    [SwaggerResponse(404, "Not Found")]
     public ActionResult<Product> Get()
     {
-        return Ok(_context.Products);
+        var products = _context.Products;
+        if (products == null)
+            return NotFound();
+        else
+            return Ok(_context.Products);
     }
 
+    
     [HttpGet]
     [Route("{Id}")]
+    [SwaggerOperation(Summary = "Listing a product by its ID", Description = "Get a single product from our database")]
+    [SwaggerResponse(StatusCodes.Status200OK, "Request Successful", typeof(Product))]
+    [SwaggerResponse(404, "Not Found")]
+
     public ActionResult<Product> Get(int Id)
     {
         var product = _context.Products?.Find(Id); // AÑADIENDO INTERROGANTE PARA PERMITIR NULL

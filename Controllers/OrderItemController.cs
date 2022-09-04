@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using Swashbuckle.AspNetCore.Annotations;
 
 namespace ApiNet6.Controllers;
 
@@ -32,14 +33,23 @@ public class OrderItemController : ControllerBase
     }
 
     [HttpGet]
-    public ActionResult<OrderItem> Get() 
+    [SwaggerOperation(Summary = "get all orders", Description = "Get a list of orders from our database")]
+    [SwaggerResponse(StatusCodes.Status200OK, "Request Successful", typeof(List<OrderItem>))]
+    [SwaggerResponse(404, "Not Found")]
+    public ActionResult<List<OrderItem>> Get() 
     {
-        // return Ok(_orders); // status 200
-        return Ok(_context.Orders); // status 200
+        var orders = _context.Orders;
+        if (orders == null)
+            return NotFound();
+        else
+            return Ok(_context.Orders);
     }
 
     [HttpGet]
     [Route("{OrderId}")] // Obtenemos un una un array segun su numero de orden
+    [SwaggerOperation(Summary = "Listing a order by its OrderID", Description = "Get a single order from our database")]
+    [SwaggerResponse(StatusCodes.Status200OK, "Request Successful", typeof(OrderItem))]
+    [SwaggerResponse(404, "Not Found")]
     public ActionResult<OrderItem> Get(int OrderId)
     {
         // List <OrderItem> order = _orders.FindAll(x => x.OrderId == OrderId);
@@ -73,6 +83,8 @@ public class OrderItemController : ControllerBase
 ///
 /// </remarks>
     [HttpPost] // Create
+    [SwaggerOperation(Summary = "Creating a order by its ID", Description = "Createan order to our database")]
+    [SwaggerResponse(StatusCodes.Status200OK, "Request Successful", typeof(OrderItem))]
     public ActionResult Post(List<OrderItem> orderItem) {
       
         int? lastOrder = _context.Orders == null? 1 : _context.Orders.Max(x => x.OrderId) + 1; // devuelve el siguiente id de la tabla
@@ -82,7 +94,7 @@ public class OrderItemController : ControllerBase
             _context.Orders?.Add(item);
         }          
         _context.SaveChanges();
-        return Ok(orderItem); // Status 201
+        return Ok(orderItem); // Status 200
         
     }
 }

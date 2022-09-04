@@ -15,12 +15,11 @@ builder.Services.AddDbContext<DataContext>(options =>
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(
     // Modificando addSwaggergen para poder poner nuestros comentarios
-    
-    options =>
-    {
-        var xmlFilename = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
-        options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, xmlFilename));
-        options.SwaggerDoc("v1", new OpenApiInfo { Title = "Mi API en .NET 6", Version = "v1" });
+
+    c => {
+        c.EnableAnnotations();
+        c.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo { Title = "AA2 vicente Lizandra", Version = "v1" });
+
     }
 );
 
@@ -28,6 +27,10 @@ var app = builder.Build();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
+{
+    app.UseSwagger();
+    app.UseSwaggerUI();
+} else
 {
     app.UseSwagger();
     app.UseSwaggerUI();
